@@ -1,11 +1,11 @@
-.update-card {
+.update-card .card-header {
     background: #ce2f03;
     color: white;
     cursor: pointer;
     padding-left: 40px;
  }
  @media (max-width: 768px){
-     .update-card{
+    .update-card .card-header{
          padding-left: 20px;
          font-size: 16px;
      }

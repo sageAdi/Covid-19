@@ -10,9 +10,9 @@ export default function UpdatesCard(props) {
       setDetails({ name: 'Country' })
    }
    return (
-      <div>
+      <div className='update-card'>
          <Accordion>
-            <Card className='update-card'>
+            <Card >
                <Accordion.Toggle
                   as={Card.Header}
                   eventKey={props.optionKey}
