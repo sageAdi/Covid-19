@@ -1,0 +1,12 @@
+.update-card {
+    background: #ce2f03;
+    color: white;
+    cursor: pointer;
+    padding-left: 40px;
+ }
+ @media (max-width: 768px){
+     .update-card{
+         padding-left: 20px;
+         font-size: 16px;
+     }
+ }

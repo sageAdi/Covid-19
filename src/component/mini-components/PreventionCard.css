@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Condensed&display=swap');
+.preventionCard {
+   width: 320px;
+   height: 285px;
+   font-family: 'Roboto', sans-serif;
+   margin: 8px;
+   border-radius: 10px;
+   padding: 8px;
+}
+.preventionCard .card-img {
+   width: 160px;
+   height: 160px;
+   align-self: center;
+}
+.preventionCard-title {
+   font-weight: bold;
+   font-size: 18px;
+   line-height: 21px;
+   color: #000000;
+   text-align: center;
+}
+.preventionCard-description {
+   font-size: 16px;
+   line-height: 19px;
+   color: #000000;
+   text-align: start;
+}

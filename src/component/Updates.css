@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+.updates-section {
+   margin: 100px;
+}
+.updates-title {
+   font-family: 'Roboto Condensed', sans-serif;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 24px;
+   line-height: 28px;
+   letter-spacing: 0.05em;
+   color: #ce2f03;
+}
+
+/* Tablet View */
+@media (max-width: 768px){
+   .updates-section {
+      margin: 50px;
+   }
+   .updates-title{
+      font-size: 16px;
+   }
+}
+
+@media (max-width: 425px) {
+   .card-header {
+      font-size: smaller;
+      font-weight: 600;
+   }
+}

@@ -1,0 +1,22 @@
+.prevention-section {
+   margin: 100px;
+   background: #3D1BB6;
+}
+.prevention-title {
+   font-size: 24px;
+   line-height: 28px;
+   text-align: center;
+   color: #ffffff;
+   padding: 8px;
+}
+.prevention-text {
+   font-size: 36px;
+   line-height: 42px;
+   text-align: center;
+   color: #23ae41;
+}
+.prevention-dock{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}

@@ -1,0 +1,27 @@
+.symptoms-section {
+   margin: 100px;
+}
+.symptoms-section .col-md-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.symptoms-title {
+   font-size: 24px;
+   line-height: 28px;
+   color: #ce2f03;
+   text-align: center;
+}
+.symptoms-text {
+   font-size: 30px;
+   line-height: 42px;
+   text-align: center;
+}
+.symptoms-section .col-md-10 {
+   background: #23ae41;
+   display: flex;
+   flex-flow: row wrap;
+   justify-content: space-between;
+   padding: 8px;
+}

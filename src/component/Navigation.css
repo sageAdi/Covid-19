@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+.navbar {
+   font-family: 'Roboto Condensed', sans-serif;
+   padding: 0;
+   padding-bottom: 100px;
+   color: #ffffff;
+}
+

@@ -1,0 +1,22 @@
+.about-section {
+   margin: 100px;
+}
+.about-title {
+   font-size: 24px;
+   line-height: 28px;
+   letter-spacing: 0.05em;
+   text-transform: uppercase;
+   color: #fc4a1a;
+}
+.about-text {
+   font-size: 36px;
+   line-height: 42px;
+}
+.about-paragrapg {
+   font-size: 18px;
+   line-height: 21px;
+}
+.about-pic{
+    background: url(../About_pic.png);
+    min-height: 320px;
+}

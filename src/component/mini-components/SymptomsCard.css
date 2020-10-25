@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Condensed&display=swap');
+.symptomCard{
+    width: 430px;
+    height: 125px;
+    font-family: 'Roboto', sans-serif;
+    margin: 8px;
+    border-radius: 10px;
+}
+.symptomCard-body{
+    padding: 8px;
+}
+.symptomCard-title {
+   font-weight: bold;
+   font-size: 14px;
+   line-height: 21px;
+   align-self: flex-start;
+}
+.symptomCard-description {
+   font-weight: normal;
+   font-size: 12px;
+   line-height: 19px;
+   align-self: flex-start;
+}
