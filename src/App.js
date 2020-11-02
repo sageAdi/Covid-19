@@ -1,26 +1,24 @@
 import React from 'react'
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
-import Dashboard from './component/Dashboard'
-import Hero from './component/Hero'
-import AccordionDetails from './component/Updates'
+import {Route, Switch } from 'react-router-dom'
+import Updates from './component/Updates'
 import About from './component/About'
-import Footer from './component/Footer'
-import Spread from './component/Spread'
 import Symptoms from './component/Symptoms'
 import Prevention from './component/Prevention'
+import Home from './component/Home'
+// import ScrollToTop from './component/ScrollToTop'
 
 function App() {
    return (
       <div className='app'>
-         <Hero/>
-         <Dashboard/>
-         <AccordionDetails/>
-         <About/>
-         <Spread/>
-         <Symptoms/>
-         <Prevention/>
-         <Footer/>
+         <Switch>
+            <Route exact path='/' component={Home} />
+            <Route path='/updates' component={Updates} />
+            <Route path='/about' component={About} />
+            <Route path='/symptoms' component={Symptoms} />
+            <Route path='/prevention' component={Prevention} />
+         </Switch>
       </div>
    )
 }

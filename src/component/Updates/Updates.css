@@ -19,13 +19,12 @@
       margin: 50px;
    }
    .updates-title{
-      font-size: 16px;
+      font-size: 24px;
    }
 }
 
-@media (max-width: 425px) {
-   .card-header {
-      font-size: smaller;
-      font-weight: 600;
+@media (max-width: 426px) {
+   .updates-section {
+      margin: 50px 20px;
    }
 }

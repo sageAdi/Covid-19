@@ -1,3 +1,6 @@
+.update-card{
+    border-radius: 10px;
+}
 .update-card .card-header {
     background: #ce2f03;
     color: white;

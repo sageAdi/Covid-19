@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+.navbar {
+   font-family: 'Roboto Condensed', sans-serif;
+   color: #ffffff;
+   padding: 10px 100px;
+   background-color:transparent;
+}
+.navbar-active{
+   background-color: #222222;
+}
+
+/* Tablet View */
+@media (max-width:768px){
+   .navbar{
+      background-color: #222222;
+      padding: 10px 50px;
+   }
+}
+
+/* Mobile View */
+@media (max-width:768px){
+   .navbar{
+      background-color: #222222;
+      padding: 10px 20px;
+   }
+}

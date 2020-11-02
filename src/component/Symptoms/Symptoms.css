@@ -1,0 +1,44 @@
+.symptoms-section {
+   margin: 100px;
+   display: flex;
+   flex-flow: row wrap;
+   align-items: center;
+   justify-content: space-between;
+}
+.symptoms-title{
+   flex: 1 1 20%;
+}
+.symptoms-title-1 {
+   font-size: 24px;
+   line-height: 28px;
+   color: #ce2f03;
+}
+.symptoms-title-2 {
+   font-size: 30px;
+   line-height: 42px;
+}
+.symptoms-body{
+   background: #23ae41;
+   border-radius: 10px;
+   flex: 1 1 80%;
+   display: flex;
+   flex-flow: row wrap;
+}
+.symptoms-body-card{
+   flex: 0 0;
+}
+
+
+/* Tablet View */
+@media (max-width: 768px){
+   .symptoms-section{
+      margin: 50px;
+   }
+}
+
+/* Mobile View */
+@media (max-width: 426px){
+   .symptoms-section{
+      margin: 50px 20px;
+   }
+}

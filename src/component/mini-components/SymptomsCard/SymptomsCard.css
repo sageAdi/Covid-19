@@ -1,23 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Condensed&display=swap');
 .symptomCard{
-    width: 430px;
-    height: 125px;
     font-family: 'Roboto', sans-serif;
     margin: 8px;
     border-radius: 10px;
-}
-.symptomCard-body{
+    flex: 1 0 30vw;
+    display: flex;
+    flex-flow: row wrap;
     padding: 8px;
+    justify-content: center;
 }
-.symptomCard-title {
+.symptomCard .card-img-top{
+    width: 60px;
+    height: 60px;
+    align-self: center;
+}
+.symptomCard .card-body{
+}
+.symptomCard .card-title {
    font-weight: bold;
    font-size: 14px;
-   line-height: 21px;
    align-self: flex-start;
 }
-.symptomCard-description {
+.symptomCard .card-text {
    font-weight: normal;
    font-size: 12px;
-   line-height: 19px;
    align-self: flex-start;
 }
+
+/* Tablet View */
+@media (max-width: 768px){
+    .symptomCard{
+       flex: 1 1 auto;
+    }
+ }

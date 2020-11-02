@@ -1,5 +1,5 @@
 import React from 'react'
-import pic from '../human-contact.png'
+import pic from '../../images/human-contact.png'
 import './Spread.css'
 
 const Spread = () => {
@@ -19,13 +19,13 @@ const Spread = () => {
             </div>
             <div className='col-md-5'>
                 <div className='spread-reason-box inactive'>
-                    <p>Contaminated Object</p>
+                    <p className='spread-reason-text'>Contaminated Object</p>
                 </div>
                 <div className='spread-reason-box active'>
                     <p className='spread-reason-text'>Human Contact</p>
                 </div>
                 <div className='spread-reason-box inactive'>
-                    <p>Social Gathering</p>
+                    <p className='spread-reason-text'>Social Gathering</p>
                 </div>
             </div>
          </div>

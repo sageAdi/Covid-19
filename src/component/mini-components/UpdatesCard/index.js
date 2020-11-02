@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import './UpdatesCard.css'
 import Accordion from 'react-bootstrap/Accordion'
 import Card from 'react-bootstrap/Card'
-import TableContent from '../TableContents'
+import TableContent from '../../TableContents'
 
 export default function UpdatesCard(props) {
    const [details, setDetails] = useState({})
@@ -10,8 +10,8 @@ export default function UpdatesCard(props) {
       setDetails({ name: 'Country' })
    }
    return (
-      <div className='update-card'>
-         <Accordion>
+      <div>
+         <Accordion className='update-card'>
             <Card >
                <Accordion.Toggle
                   as={Card.Header}

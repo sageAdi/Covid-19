@@ -1,7 +1,7 @@
 import React from 'react'
 import './Prevention.css'
-import PreventionCard from './mini-components/PreventionCard'
-import Cough from '../cough.png'
+import PreventionCard from '../mini-components/PreventionCard'
+import Cough from '../../images/cough.png'
 
 export default function Prevention() {
    const prevention = [
@@ -15,7 +15,7 @@ export default function Prevention() {
       'Regular handwashing is one of the best ways to remove germs, avoid getting sick, and prevent the spread.',
    ]
    return (
-      <div className='prevention-section'>
+      <div className='prevention-section' id='prevention'>
          <p className='prevention-title'>HOW TO PREVENT & CURE CORONA VIRUS?</p>
          <p className='prevention-text'>COVID-19 PREVENTIONS</p>
          <div className='prevention-dock'>

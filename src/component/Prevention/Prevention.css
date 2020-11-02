@@ -1,6 +1,7 @@
 .prevention-section {
    margin: 100px;
    background: #3D1BB6;
+   border-radius: 10px;
 }
 .prevention-title {
    font-size: 24px;

@@ -2,10 +2,11 @@
 
 .dashboard-container {
    margin: 100px;
+   padding: 40px 0px;
    display: flex;
+   flex-flow: row wrap;
    justify-content: space-around;
    align-items: center;
-   padding: 40px;
    background: rgba(206, 47, 3, 1);
    border-radius: 10px;
    font-family: 'Roboto Condensed', sans-serif;
@@ -20,46 +21,24 @@
 }
 .dashboard-dock {
    display: flex;
-   flex-flow: row wrap;
-   justify-content: space-around;
+   flex-flow: row nowrap;
 }
 
 @media (max-width: 768px) {
    .dashboard-container{
-      padding: 20px;
+      margin: 50px;
+      padding: 0;
    }
    .dashboard-heading {
       font-size: 16px;
       font-weight: bold;
    }
-   .dashboard-heading p {
-      font-size: smaller;
-   }
-   .cards {
-      width: 4rem;
-      border-radius: 30px;
-   }
-   .card-title {
-      font-size: small;
-      font-weight: bold;
-   }
-   .card-text {
-      font-size: smaller;
-   }
 }
-@media (max-width: 425px) {
-   /* .dashboard-container{
-        flex-direction: column;
-    }
-    .dashboard-heading{
-        width: 100%;
-     } */
-   .dashboard-content {
-      display: flex;
-      flex-flow: row wrap;
+@media (max-width: 426px) {
+   .dashboard-container{
+      margin: 50px 20px;
    }
-   .cards {
-      flex: 40%;
-      margin: 5px;
+   .dashboard-dock{
+      flex-flow: column;
    }
 }

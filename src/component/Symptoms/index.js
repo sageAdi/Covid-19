@@ -1,7 +1,7 @@
 import React from 'react'
 import './Symptoms.css'
-import SymptomsCard from './mini-components/SymptomsCard'
-import cough from '../cough.png'
+import SymptomsCard from '../mini-components/SymptomsCard'
+import cough from '../../images/cough.png'
 
 const Symptoms = () => {
    const symptoms = [
@@ -19,13 +19,49 @@ const Symptoms = () => {
       'One of the symptoms of COVID-19 is shortness of breath. Shortness of breath is less common than fever and cough, but happens in about 30% of people.',
    ]
    return (
-      <div className='symptoms-section'>
-         <div className='row'>
-            <div className='col-md-2'>
-               <p className='symptoms-title'>YOU MIGHT BE INFECTED?</p>
-               <p className='symptoms-text'>KNOWN COVID-19 SYMPTOMS</p>
+      <div className='symptoms-section' id='symptoms'>
+         <div className='symptoms-title'>
+            <p className='symptoms-title-1'>YOU MIGHT BE INFECTED?</p>
+            <p className='symptoms-title-2'>KNOWN COVID-19 SYMPTOMS</p>
+         </div>
+
+         <div className='symptoms-body'>
+            <SymptomsCard
+               image={cough}
+               symptom={symptoms[0]}
+               description={description[0]}
+               className='symptoms-body-card'
+            />
+            <SymptomsCard
+               image={cough}
+               symptom={symptoms[1]}
+               description={description[1]}
+               className='symptoms-body-card'
+            />
+            <SymptomsCard
+               image={cough}
+               symptom={symptoms[2]}
+               description={description[2]}
+               className='symptoms-body-card'
+            />
+            <SymptomsCard
+               image={cough}
+               symptom={symptoms[3]}
+               description={description[3]}
+               className='symptoms-body-card'
+            />
+            <SymptomsCard
+               image={cough}
+               symptom={symptoms[4]}
+               description={description[4]}
+               className='symptoms-body-card'
+            />
+         </div>
+         {/* <div className='row'>
+            <div className='col-md-3'>
+               
             </div>
-            <div className='col-md-10'>
+            <div className='col-md-9'>
                <SymptomsCard
                   image={cough}
                   symptom={symptoms[0]}
@@ -52,7 +88,7 @@ const Symptoms = () => {
                   description={description[4]}
                />
             </div>
-         </div>
+         </div> */}
       </div>
    )
 }

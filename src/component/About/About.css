@@ -17,6 +17,26 @@
    line-height: 21px;
 }
 .about-pic{
-    background: url(../About_pic.png);
+    background: url(../../images/About_pic.png);
     min-height: 320px;
+}
+
+/* Tablet View */
+@media (max-width: 769px){
+   .about-section{
+      margin: 50px;
+   }
+   .about-pic{
+      min-height: 200px;
+   }
+}
+
+/* Mobile View */
+@media (max-width: 426px){
+   .about-section{
+      margin: 50px 20px;
+   }
+   .about-pic{
+      min-height: 200px;
+   }
 }

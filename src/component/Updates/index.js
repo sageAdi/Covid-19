@@ -1,6 +1,6 @@
 import React from 'react'
 import './Updates.css'
-import UpdatesCard from './mini-components/UpdatesCard'
+import UpdatesCard from '../mini-components/UpdatesCard'
 
 const AccordionDetails = () => {
    const option = [
@@ -10,7 +10,7 @@ const AccordionDetails = () => {
    ]
    
    return (
-      <div className='updates-section'>
+      <div className='updates-section' id='updates'>
          <p className='updates-title'>Updates of Covid-19</p>
          <UpdatesCard option={option[0]} optionKey='0'/>
          <UpdatesCard option={option[1]} optionKey='1'/>

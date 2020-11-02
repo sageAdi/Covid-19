@@ -1,13 +1,11 @@
 import React from 'react'
 import './Hero.css'
-import Navigation from './Navigation'
 import Button from 'react-bootstrap/Button'
-import covid from '../covid_logo-copy.png'
+import covid from '../../images/covid_logo-copy.png'
 
 export default function Hero() {
    return (
-      <div className='hero'>
-      <Navigation/>
+      <div className='hero' >
          <div className='row'>
             <div className='col-md-6 hero-text'>
                <p className='medium-text text'>
@@ -19,7 +17,7 @@ export default function Hero() {
                   China in December 2019, the outbreak was later recognised as a
                   pandemic by the WHO.
                </p>
-               <Button className='track-btn'>Track Covid-19</Button>
+               <Button href='#dashboard' className='track-btn d-none d-md-flex'>Track Covid-19</Button>
             </div>
             <div className='col-md-6 hero-img'>
                <img src={covid} alt='covid-logo' className='hero-image img-fluid'/>

@@ -1,9 +1,10 @@
 import React from 'react'
 import './About.css'
+import Spread from '../Spread'
 
 export default function About() {
    return (
-      <div className='about-section'>
+      <div className='about-section' id='about'>
          <div className='row'>
             <div className='col-md-6'>
                <p className='about-title'>About the Disease</p>
@@ -19,6 +20,7 @@ export default function About() {
                 <div className='about-pic'></div>
             </div>
          </div>
+         <Spread/>
       </div>
    )
 }
