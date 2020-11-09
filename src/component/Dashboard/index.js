@@ -4,7 +4,7 @@ import DashboardCard from '../mini-components/DashboardCard'
 
 const Dashboard = () => {
    const title = ['Confirmed Cases', 'Total Recovered', 'Total Death']
-   const number = ['31,67,323', '7,04,348', '24,04,585']
+   const number = ['31,67,323', '7,04,348', '24,04,600']
    return (
       <div className='dashboard-container' id='dashboard'>
          <p className='dashboard-heading'>Worldwide Update</p>
