@@ -1,5 +1,6 @@
 .about-section {
-   margin: 100px;
+   margin: 0px 100px;
+   padding-top: 100px;
 }
 .about-title {
    font-size: 24px;

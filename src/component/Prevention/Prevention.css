@@ -1,6 +1,9 @@
 .prevention-section {
-   margin: 100px;
-   background: #3D1BB6;
+   margin: 0px 100px;
+   padding-top: 100px;
+}
+.prevention-container {
+   background: #3d1bb6;
    border-radius: 10px;
 }
 .prevention-title {
@@ -16,8 +19,8 @@
    text-align: center;
    color: #23ae41;
 }
-.prevention-dock{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
+.prevention-dock {
+   display: flex;
+   flex-flow: row wrap;
+   justify-content: space-around;
 }

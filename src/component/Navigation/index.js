@@ -1,8 +1,5 @@
 import React, { useState } from 'react'
-import Nav from 'react-bootstrap/Nav'
-import Navbar from 'react-bootstrap/Navbar'
 import './Navigation.css'
-import { Link } from 'react-scroll'
 
 const Navigation = () => {
    const [nav, setNav] = useState(false)
@@ -15,66 +12,63 @@ const Navigation = () => {
    }
    window.addEventListener('scroll', changeBackground)
    return (
-      <div>
-         <Navbar
-            className={nav ? 'navbar navbar-active' : 'navbar'}
-            expand='md'
-            variant='dark'
-            fixed='top'
+      <>
+         <nav
+            className={
+               nav
+                  ? 'navbar navbar-expand-lg fixed-top navbar-active'
+                  : 'navbar navbar-expand-lg  fixed-top'
+            }
          >
-            <Link to='home' active smooth={true} duration={500}>
-               <Navbar.Brand href='home' className='nav-brand'>
-                  Covid-19
-               </Navbar.Brand>
-            </Link>
+            <a className='navbar-brand' href='#home'>
+               Covid-19
+            </a>
+            <button
+               className='navbar-toggler'
+               type='button'
+               data-toggle='collapse'
+               data-target='#navbarSupportedContent'
+               aria-controls='navbarSupportedContent'
+               aria-expanded='false'
+               aria-label='Toggle navigation'
+            >
+               <span className='navbar-toggler-icon'></span>
+            </button>
 
-            <Navbar.Toggle aria-controls='basic-navbar-nav' />
-            <Navbar.Collapse id='basic-navbar-nav'>
-               <Nav className='ml-auto'>
-                  <Nav.Item>
-                     <Link to='home' active smooth={true} duration={500}>
-                        <Nav.Link>Home</Nav.Link>
-                     </Link>
-                  </Nav.Item>
-                  <Nav.Item>
-                     <Link
-                        to='updates'
-                        smooth={true}
-                        duration={500}
-                        offset={-80}
-                     >
-                        <Nav.Link>Updates</Nav.Link>
-                     </Link>
-                  </Nav.Item>
-                  <Nav.Item>
-                     <Link to='about' smooth={true} duration={500} offset={-80}>
-                        <Nav.Link>About</Nav.Link>
-                     </Link>
-                  </Nav.Item>
-                  <Nav.Item>
-                     <Link
-                        to='symptoms'
-                        smooth={true}
-                        duration={500}
-                        offset={-80}
-                     >
-                        <Nav.Link>Sysmptoms</Nav.Link>
-                     </Link>
-                  </Nav.Item>
-                  <Nav.Item>
-                     <Link
-                        to='prevention'
-                        smooth={true}
-                        duration={500}
-                        offset={-80}
-                     >
-                        <Nav.Link>Prevention</Nav.Link>
-                     </Link>
-                  </Nav.Item>
-               </Nav>
-            </Navbar.Collapse>
-         </Navbar>
-      </div>
+            <div
+               className='collapse navbar-collapse'
+               id='navbarSupportedContent'
+            >
+               <ul className='navbar-nav ml-auto'>
+                  <li className='nav-item active'>
+                     <a className='nav-link' href='#home'>
+                        Home <span className='sr-only'>(current)</span>
+                     </a>
+                  </li>
+                  <li className='nav-item'>
+                     <a className='nav-link' href='#updates'>
+                        Updates
+                     </a>
+                  </li>
+                  <li className='nav-item'>
+                     <a className='nav-link' href='#about'>
+                        About
+                     </a>
+                  </li>
+                  <li className='nav-item'>
+                     <a className='nav-link' href='#symptoms'>
+                        Symptoms
+                     </a>
+                  </li>
+                  <li className='nav-item'>
+                     <a className='nav-link' href='#prevention'>
+                        Prevention
+                     </a>
+                  </li>
+               </ul>
+            </div>
+         </nav>
+      </>
    )
 }
 export default Navigation

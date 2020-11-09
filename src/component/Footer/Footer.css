@@ -1,4 +1,8 @@
-.footer{
+.footer-section{
+    margin-top: 100px;
     background: #222222;
-    padding: 50px 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

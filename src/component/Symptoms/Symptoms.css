@@ -1,5 +1,6 @@
 .symptoms-section {
-   margin: 100px;
+   margin: 0px 100px;
+   padding-top: 100px;
    display: flex;
    flex-flow: row wrap;
    align-items: center;
